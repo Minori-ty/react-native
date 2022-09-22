@@ -1,0 +1,13 @@
+{
+	"absolute": {
+		"style": {
+			"position": "absolute"
+		}
+	},
+	"text-yellow-500": {
+		"style": {
+			"--tw-text-opacity": 1,
+			"color": "rgb(234 179 8 / var(--tw-text-opacity))"
+		}
+	}
+}
