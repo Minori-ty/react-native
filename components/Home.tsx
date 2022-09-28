@@ -15,6 +15,7 @@ import ImageViewer from 'react-native-image-zoom-viewer';
 import AutoHeightImage from 'react-native-auto-height-image';
 import axios from 'axios';
 import {useTailwind} from 'tailwind-rn';
+import {IProp} from '../types';
 
 const imgArr = [
   {
@@ -39,14 +40,14 @@ const imgArr = [
   },
 ];
 
-export default function Home(prop) {
+export default function Home(prop: IProp) {
   const [imgStatus, setImgStatus] = useState({visible: false, index: 0});
   const tailwind = useTailwind();
 
   useEffect(() => {
     async function init() {
       const {data} = await axios.get('https://www.baidu.com');
-      console.log(data);
+      // console.log(data);
     }
     init();
     console.log(88);

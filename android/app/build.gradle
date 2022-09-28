@@ -325,3 +325,5 @@ dependencies {
   // 如果只需要支持WebP格式而不需要动图
   implementation 'com.facebook.fresco:webpsupport:2.5.0'
 }
+
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
