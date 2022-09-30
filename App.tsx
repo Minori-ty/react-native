@@ -1,11 +1,11 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
+
 import Home from './components/Home';
 import About from './components/About';
 import Book from './components/Book';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {Button, StyleSheet} from 'react-native';
+
+import {StyleSheet} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
@@ -62,6 +62,15 @@ export default function App() {
           tabBarInactiveTintColor: '#666',
           tabBarShowIcon: true,
           tabBarScrollEnabled: false,
+          tabBarStyle: {
+            // paddingBottom: 10,
+            // height: 60,
+            display: 'flex',
+            justifyContent: 'center',
+          },
+          tabBarLabelStyle: {
+            // fontSize: 16,
+          },
         }}>
         <Tab.Screen
           name="Home"

@@ -10,8 +10,7 @@ export default function Book() {
   return (
     <Stack.Navigator
       initialRouteName="novel"
-      screenOptions={{title: 'none'}}
-      headerMode="none">
+      screenOptions={{title: 'none', headerShown: false}}>
       <Stack.Screen name="novel" component={Novel} />
       <Stack.Screen name="author" component={Author} />
     </Stack.Navigator>
