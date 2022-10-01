@@ -10,7 +10,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
 
-const Tab = createMaterialTopTabNavigator();
+const Tab = createMaterialBottomTabNavigator();
 
 // const Tab = createBottomTabNavigator();
 
@@ -56,22 +56,24 @@ export default function App() {
       </Tab.Navigator> */}
       <Tab.Navigator
         style={[sheet.App]}
-        tabBarPosition="bottom"
-        screenOptions={{
-          tabBarActiveTintColor: '#0960BD',
-          tabBarInactiveTintColor: '#666',
-          tabBarShowIcon: true,
-          tabBarScrollEnabled: false,
-          tabBarStyle: {
-            // paddingBottom: 10,
-            // height: 60,
-            display: 'flex',
-            justifyContent: 'center',
-          },
-          tabBarLabelStyle: {
-            // fontSize: 16,
-          },
-        }}>
+        // tabBarPosition="bottom"
+        // screenOptions={{
+        //   // tabBarActiveTintColor: '#0960BD',
+        //   // tabBarInactiveTintColor: '#666',
+        //   // tabBarShowIcon: true,
+        //   // tabBarScrollEnabled: false,
+        //   tabBarStyle: {
+        //     // paddingBottom: 10,
+        //     // height: 60,
+        //     display: 'flex',
+        //     justifyContent: 'center',
+        //   },
+        //   tabBarLabelStyle: {
+        //     // fontSize: 16,
+        //   },
+        // }}
+        barStyle={{backgroundColor: '#fff'}}
+        activeColor="#2196F3">
         <Tab.Screen
           name="Home"
           component={Home}

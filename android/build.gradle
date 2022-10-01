@@ -16,7 +16,9 @@ buildscript {
         }
     }
     repositories {
-        google()
+        // google()
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
         mavenCentral()
     }
     dependencies {
@@ -45,7 +47,8 @@ allprojects {
                 excludeGroup "com.facebook.react"
             }
         }
-        google()
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
         maven { url 'https://www.jitpack.io' }
     }
 }
